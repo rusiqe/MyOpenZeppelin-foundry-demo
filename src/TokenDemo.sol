@@ -8,7 +8,7 @@ contract TokenDemo is ERC721URIStorage {
   using Counters for Counters.Counter;
   Counters.Counter private _tokenId;
 
-  constructor() ERC721("TokenDemo", "TD") {}
+  constructor() ERC721("Tau", "TD") {}
 
   function mint(string memory tokenUri) external returns (uint256) {
     uint256 newTokenId = _tokenId.current();
